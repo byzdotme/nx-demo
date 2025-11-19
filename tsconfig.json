@@ -2,5 +2,18 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./libs/demo-core"
+    },
+    {
+      "path": "./apps/demo-web"
+    },
+    {
+      "path": "./apps/demo-server-e2e"
+    },
+    {
+      "path": "./apps/demo-server"
+    }
+  ]
 }
