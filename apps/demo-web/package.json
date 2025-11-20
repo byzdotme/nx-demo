@@ -1,5 +1,9 @@
 {
   "name": "@nxdemo/demo-web",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@demo/core": "workspace:*",
+    "@demo/validation": "workspace:*"
+  }
 }

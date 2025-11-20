@@ -66,6 +66,8 @@
     }
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "@demo/core": "workspace:*",
+    "@demo/validation": "workspace:*"
   }
 }
