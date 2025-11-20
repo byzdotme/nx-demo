@@ -4,13 +4,10 @@
   "include": [],
   "references": [
     {
-      "path": "../../libs/demo-validation"
+      "path": "../demo-core"
     },
     {
-      "path": "../../libs/demo-core"
-    },
-    {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.lib.json"
     },
     {
       "path": "./tsconfig.spec.json"

@@ -14,11 +14,9 @@ module.exports = {
     plugins: [
       new TsconfigPathsPlugin({
         configFile: join(__dirname, 'tsconfig.app.json'),
+        extensions: ['.ts', '.tsx', '.mjs', '.js', '.jsx'],
       }),
-    ],
-    alias: {
-      '@byzdotme/nx-demo-core': join(__dirname, '../../libs/demo-core/dist/index.js'),
-    },
+    ]
   },
   plugins: [
     new NxAppWebpackPlugin({

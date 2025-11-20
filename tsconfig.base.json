@@ -16,6 +16,11 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@nxdemo/source"]
+    "customConditions": ["@nxdemo/source"],
+    "baseUrl": ".",
+    "paths": {
+      "@demo/core": ["libs/demo-core/src/index.ts"],
+      "@demo/validation": ["libs/demo-validation/src/index.ts"]
+    }
   }
 }

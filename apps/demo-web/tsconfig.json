@@ -4,6 +4,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/demo-validation"
+    },
+    {
       "path": "../../libs/demo-core"
     },
     {

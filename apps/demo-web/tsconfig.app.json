@@ -9,7 +9,8 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
+    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "lib": ["es2022", "DOM", "DOM.Iterable"]
   },
   "exclude": [
     "out-tsc",
@@ -34,6 +35,9 @@
   ],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.vue"],
   "references": [
+    {
+      "path": "../../libs/demo-validation/tsconfig.lib.json"
+    },
     {
       "path": "../../libs/demo-core/tsconfig.lib.json"
     }

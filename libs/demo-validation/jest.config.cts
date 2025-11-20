@@ -10,7 +10,7 @@ const swcJestConfig = JSON.parse(
 swcJestConfig.swcrc = false;
 
 module.exports = {
-  displayName: '@demo/core',
+  displayName: '@demo/validation',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

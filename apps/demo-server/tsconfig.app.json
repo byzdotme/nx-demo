@@ -20,6 +20,9 @@
   ],
   "references": [
     {
+      "path": "../../libs/demo-validation/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/demo-core/tsconfig.lib.json"
     }
   ]
