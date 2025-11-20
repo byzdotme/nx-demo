@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json()); // 必须开启 JSON 解析
 
 // 模拟内存数据库
-let tasks: AgileTask[] = [];
+const tasks: AgileTask[] = [];
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
@@ -26,14 +26,15 @@ app.post('/api/tasks', (req, res) => {
 
   if (!validation.isValid) {
     // 校验失败，返回 400 和建议
-    return res.status(400).json(validation);
+    res.status(400).json(validation);
+    return;
   }
 
   // 2. 校验通过，创建任务
   const newTask: AgileTask = {
     id: Date.now().toString(),
-    title: body.title!,
-    points: body.points!,
+    title: body.title || '',
+    points: body.points || 0,
     createdAt: new Date()
   };
 
